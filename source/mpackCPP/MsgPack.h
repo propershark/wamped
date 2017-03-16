@@ -28,7 +28,7 @@
 class MsgPack {
 private:
     mpack_writer_t writer;
-    char data[1024];
+    char data[4096];
 
     void _getJson(std::stringstream &s, mpack_reader_t &reader) const;
 
